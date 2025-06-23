@@ -14,7 +14,7 @@
 
 </div>
 
-## �� Table of Contents
+## 📋 Table of Contents
 
 - [🌟 Overview](#-overview)
 - [🔧 Rules Collection](#-rules-collection)
