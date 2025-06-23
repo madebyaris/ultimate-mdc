@@ -269,51 +269,38 @@ graph TD
 > **Complete visual guide for building applications with Merlin AI and Cursor rules**
 
 ```mermaid
-flowchart TD
-    Start([🚀 Start New Project]) --> PRD[📋 Generate PRD<br/>Command: prd: your app idea]
+flowchart LR
+    Start([🚀 Start]) --> PRD[📋 PRD<br/>prd: your idea]
+    PRD --> Arch[🏗️ Architecture<br/>FOCUS MODE]
+    Arch --> Design[🎨 Design System<br/>Colors & Components]
     
-    PRD --> Arch[🏗️ Tech Architecture<br/>Command: FOCUS MODE<br/>Recommend tech stack]
+    Design --> L1{🏗️ Level 1<br/>Visual<br/>1-3d}
+    L1 --> L1V{✅ Valid?}
+    L1V -->|No| L1
+    L1V -->|Yes| L2{🏗️ Level 2<br/>Interactive<br/>3-7d}
     
-    Arch --> Design[🎨 Design System Setup<br/>Create color palette<br/>Typography & components]
+    L2 --> L2V{✅ Valid?}
+    L2V -->|No| L2
+    L2V -->|Yes| L3{🏗️ Level 3<br/>Database<br/>5-14d}
     
-    Design --> L1{🏗️ MVP LEVEL 1<br/>Visual Mockup<br/>1-3 days}
+    L3 --> L3V{✅ Valid?}
+    L3V -->|No| L3
+    L3V -->|Yes| Security[🔒 Security<br/>SECURE MODE]
     
-    L1 --> L1V[✅ Validation<br/>Stakeholder Review<br/>Visual Appeal Check]
-    L1V -->|❌ Needs Changes| L1
-    L1V -->|✅ Approved| L2{🏗️ MVP LEVEL 2<br/>Interactive Prototype<br/>3-7 days}
+    Security --> L4{🏗️ Level 4<br/>Production<br/>7-21d}
+    L4 --> L4V{✅ Valid?}
+    L4V -->|No| L4
+    L4V -->|Yes| L5{🏗️ Level 5<br/>Market<br/>14-30d}
     
-    L2 --> L2F[🔧 Features Added:<br/>• Form Handling<br/>• State Management<br/>• Client Routing<br/>• Interactive UI]
+    L5 --> Final[✅ QA<br/>OPTIMIZE MODE]
+    Final --> Deploy[🎉 Launch!]
     
-    L2F --> L2V[✅ Validation<br/>Test Interactions<br/>User Flow Check]
-    L2V -->|❌ Needs Changes| L2
-    L2V -->|✅ Approved| L3{🏗️ MVP LEVEL 3<br/>Database Integration<br/>5-14 days}
-    
-    L3 --> L3F[🗄️ Backend Features:<br/>• Database Schema<br/>• API Endpoints<br/>• Authentication<br/>• Real-time Updates]
-    
-    L3F --> L3V[✅ Validation<br/>Test Data Persistence<br/>API Functionality]
-    L3V -->|❌ Needs Changes| L3
-    L3V -->|✅ Approved| Security[🔒 SECURE MODE<br/>Security Review<br/>Authentication & Encryption]
-    
-    Security --> L4{🏗️ MVP LEVEL 4<br/>Production Ready<br/>7-21 days}
-    
-    L4 --> L4F[⚡ Optimization:<br/>• Caching Strategy<br/>• Error Handling<br/>• Monitoring Setup<br/>• CI/CD Pipeline]
-    
-    L4F --> L4V[✅ Validation<br/>Performance Testing<br/>Load Testing]
-    L4V -->|❌ Needs Changes| L4
-    L4V -->|✅ Approved| L5{🏗️ MVP LEVEL 5<br/>Market Ready<br/>14-30 days}
-    
-    L5 --> L5F[🚀 Scaling Features:<br/>• Horizontal Scaling<br/>• Advanced Analytics<br/>• A/B Testing<br/>• SEO Optimization]
-    
-    L5F --> Final[✅ OPTIMIZE MODE<br/>Final QA & Testing<br/>Deployment Documentation]
-    
-    Final --> Deploy[🎉 Production Deployment<br/>Market Launch Ready!]
-    
-    %% Quick Mode Commands
-    QFocus[⚡ FOCUS MODE<br/>Concentrate on current task] -.-> L1
-    QDebug[🐛 DEBUG MODE<br/>Systematic debugging] -.-> L2
-    QOptimize[📈 OPTIMIZE MODE<br/>Performance improvements] -.-> L4
-    QSecure[🔒 SECURE MODE<br/>Security review] -.-> Security
-    QDesign[🎨 DESIGN MODE<br/>UI/UX improvements] -.-> Design
+    %% Quick Commands (positioned above main flow)
+    QFocus[⚡ FOCUS MODE] -.-> L1
+    QDebug[🐛 DEBUG MODE] -.-> L2
+    QSecure[🔒 SECURE MODE] -.-> Security
+    QOptimize[📈 OPTIMIZE MODE] -.-> L4
+    QDesign[🎨 DESIGN MODE] -.-> Design
     
     %% Styling
     classDef prdClass fill:#e1f5fe,stroke:#01579b,stroke-width:2px
@@ -325,7 +312,7 @@ flowchart TD
     
     class PRD,Arch prdClass
     class Design designClass
-    class L1,L2,L3,L4,L5,L1F,L2F,L3F,L4F,L5F,Security mvpClass
+    class L1,L2,L3,L4,L5,Security mvpClass
     class L1V,L2V,L3V,L4V validationClass
     class Final,Deploy finalClass
     class QFocus,QDebug,QOptimize,QSecure,QDesign quickClass
@@ -367,6 +354,109 @@ Each level includes specific validation criteria:
 - **Level 3**: ✅ Data persistence, API functionality, authentication
 - **Level 4**: ✅ Performance benchmarks, error handling, monitoring
 - **Level 5**: ✅ Scalability testing, market readiness, compliance
+
+## 🚀 **Supercharge Your Development**
+
+### 🔧 **Generate More Cursor Rules**
+
+Want even more specialized rules for your specific needs? Use Cursor's built-in rule generator:
+
+```bash
+# Generate custom rules for your domain
+/generate cursor rules for [your specific need]
+
+# Examples:
+/generate cursor rules for e-commerce applications
+/generate cursor rules for data visualization dashboards  
+/generate cursor rules for mobile-first PWA development
+/generate cursor rules for AI/ML model integration
+/generate cursor rules for blockchain applications
+```
+
+**Pro Tip**: Combine generated rules with the existing Ultimate MDC collection for maximum productivity!
+
+### ⚡ **Recommended Tech Stack for Maximum Speed**
+
+#### **🎨 CSS Frameworks** (Choose one for rapid UI development)
+```bash
+# Modern CSS Frameworks - Pick your favorite:
+Tailwind CSS     # Utility-first, highly customizable
+Bootstrap 5      # Component-rich, battle-tested
+Bulma           # Modern CSS framework without JS
+Chakra UI       # React component library
+Material-UI     # Google's Material Design for React
+Ant Design      # Enterprise-class UI design language
+```
+
+#### **🏗️ Full-Stack Frameworks** (Choose based on your preferred language)
+
+**Frontend Frameworks:**
+```bash
+Next.js         # React-based, full-stack, great DX
+Nuxt.js         # Vue.js-based, universal apps
+SvelteKit       # Svelte-based, lightweight & fast
+Remix           # React-based, focused on web standards
+Gatsby          # React-based, static site generation
+```
+
+**Backend Frameworks:**
+```bash
+# Node.js Ecosystem
+Express.js      # Minimal and flexible
+Fastify         # Fast and low overhead
+NestJS          # Angular-inspired, TypeScript-first
+
+# Python Ecosystem  
+Django          # Batteries included, rapid development
+FastAPI         # Modern, fast, API-focused
+Flask           # Lightweight and flexible
+
+# PHP Ecosystem
+Laravel         # Elegant syntax, powerful features
+Symfony         # Professional PHP framework
+
+# Other Languages
+Ruby on Rails   # Convention over configuration
+ASP.NET Core    # Cross-platform .NET framework
+Spring Boot     # Java-based, enterprise-ready
+```
+
+#### **🎯 Framework Recommendations by Use Case:**
+
+| Use Case | Recommended Stack | Why? |
+|----------|------------------|------|
+| **SaaS Application** | Next.js + Tailwind + Supabase | Full-stack React, rapid styling, instant backend |
+| **E-commerce** | Next.js + Stripe + Prisma | Commerce features, payment integration, type-safe DB |
+| **Enterprise Dashboard** | Laravel + Vue.js + Tailwind | Robust backend, reactive frontend, professional UI |
+| **Mobile-First PWA** | SvelteKit + Tailwind + Firebase | Lightweight, responsive, real-time features |
+| **API-First Project** | FastAPI + Postgres + Redis | High performance, modern Python, scalable caching |
+| **Content Management** | Django + React + Tailwind | Admin interface, content modeling, flexible frontend |
+
+### 💡 **Quick Setup Commands with Merlin**
+
+```bash
+# Setup with recommended stacks
+"FOCUS MODE: Set up a Next.js project with Tailwind CSS and TypeScript"
+
+"MVP MODE - LEVEL 1: Create a Laravel API with Vue.js frontend using Tailwind"
+
+"DESIGN MODE: Generate a complete component library using Chakra UI"
+
+"prd: SaaS dashboard with Django backend and React frontend"
+```
+
+### 🔥 **Speed Development Tips:**
+
+1. **Start with Templates**: Use framework starter templates
+2. **Component Libraries**: Leverage pre-built UI components  
+3. **API Tools**: Use Postman/Insomnia for API testing
+4. **Database Tools**: Prisma, Eloquent, or Django ORM for type-safe queries
+5. **Authentication**: NextAuth.js, Laravel Sanctum, or Django Allauth
+6. **Deployment**: Vercel, Netlify, or Railway for instant deployment
+
+---
+
+**⚡ Remember**: The best framework is the one your team knows well. These recommendations optimize for speed and Merlin AI compatibility!
 
 ### 📊 Quality Checkpoints
 
