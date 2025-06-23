@@ -8,6 +8,8 @@
 ![AI Powered](https://img.shields.io/badge/AI-Powered-green?style=for-the-badge&logo=openai)
 ![Productivity](https://img.shields.io/badge/Productivity-10X-orange?style=for-the-badge&logo=rocket)
 
+**Languages:** [🇺🇸 English](README.md) | [🇮🇩 Bahasa Indonesia](README.id.md)
+
 </div>
 
 ## 📋 Table of Contents
