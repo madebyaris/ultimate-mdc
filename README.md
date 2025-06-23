@@ -10,9 +10,11 @@
 
 **Languages:** [🇺🇸 English](README.md) | [🇮🇩 Bahasa Indonesia](README.id.md)
 
+> **👋 I'm available for hire!** Contact me at [arissetia.m@gmail.com](mailto:arissetia.m@gmail.com) or visit [madebyaris.com/contact](https://madebyaris.com/contact).
+
 </div>
 
-## 📋 Table of Contents
+## �� Table of Contents
 
 - [🌟 Overview](#-overview)
 - [🔧 Rules Collection](#-rules-collection)
@@ -567,4 +569,4 @@ Start by trying: `prd: your next amazing feature`
 
 *Built with ❤️ for the developer community*
 
-</div> 
+</div>

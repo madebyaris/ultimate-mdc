@@ -10,6 +10,8 @@
 
 **Bahasa:** [🇺🇸 English](README.md) | [🇮🇩 Bahasa Indonesia](README.id.md)
 
+> **👋 Saya terbuka untuk kerjaan baru!** Hubungi saya di [arissetia.m@gmail.com](mailto:arissetia.m@gmail.com) atau kunjungi [madebyaris.com/contact](https://madebyaris.com/contact).
+
 </div>
 
 ## 📋 Daftar Isi
@@ -327,4 +329,15 @@ Coba mulai dengan: `prd: [ide brilian Anda berikutnya]`
 
 *Dibuat dengan ❤️ untuk komunitas developer Indonesia.*
 
-</div> 
+</div>
+
+---
+
+## 📬 Hubungi Saya | Siap Berkolaborasi
+
+Saat ini saya tersedia untuk proyek freelance dan terbuka untuk peluang baru. Jika Anda memiliki proyek atau merasa keahlian saya dapat memberikan nilai tambah bagi tim Anda, saya akan senang sekali bisa terhubung.
+
+<p align="center">
+<a href="mailto:arissetia.m@gmail.com" target="_blank"><img alt="Email" src="https://img.shields.io/badge/Email-arissetia.m@gmail.com-blue?style=flat-square&logo=gmail" /></a>
+<a href="https://madebyaris.com/contact" target="_blank"><img alt="Kontak" src="https://img.shields.io/badge/Kontak-Website-green?style=flat-square&logo=google-chrome" /></a>
+</p> 
